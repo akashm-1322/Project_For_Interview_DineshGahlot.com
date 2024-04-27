@@ -1,0 +1,401 @@
+/* Default styles */
+* {
+    box-sizing: border-box;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    color: black;
+}
+
+.navbar-brand:hover {
+    color: blue;
+}
+
+.nav-link {
+    margin-left: 20px;
+    color: black;
+    text-transform: capitalize;
+    font-family: 'Rubik', sans-serif;
+}
+
+.nav-link:hover {
+    color: blue;
+}
+
+.search {
+    height: 40px;
+    width: 80%;
+    border-radius: 30px;
+    border: 2px solid black;
+    outline: none;
+    margin-right: 40px;
+    margin-left: 40px;
+    font-family: 'Rubik', sans-serif;
+    padding: 20px;
+    float: right;
+}
+.main {
+    background: url("./Images/photo3.jpg") no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding-bottom: 100px; /* Adjusted padding */
+}
+
+.main h1 {
+    font-size: 2.5rem; /* Increased font size */
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif; /* Updated font family */
+    color: rgba(255, 255, 255, 0.9); /* Set text color with opacity */
+    padding: 20px; /* Added padding */
+    margin-top: 10vh; /* Adjusted vertical alignment */
+    line-height: 1.5; /* Increased line height for readability */
+}
+
+.footer1 {
+    color: rgba(255, 255, 255, 0.7); /* Set footer text color with opacity */
+    font-size: 1rem; /* Adjusted font size */
+}
+
+
+.btn1 {
+    height: 45px;
+    width: 20%;
+    border: none;
+    outline: none;
+    background-color: rgba(240, 200, 238, 0.5);
+    color: green;
+    font-weight: 600;
+    border-radius: 60px;
+    margin-top: 15%;
+}
+
+.img-animals {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px; /* Add some spacing between images */
+    border-radius: 10px; /* Add rounded corners to the images */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+}
+
+.row-xs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col-xs {
+    flex: 0 0 calc(25% - 20px); /* Adjust column width for different screen sizes */
+    max-width: calc(25% - 20px); /* Adjust column width for different screen sizes */
+    margin: 10px; /* Add some spacing around columns */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .col-xs {
+        flex: 0 0 calc(50% - 20px); /* Adjust column width for smaller screens */
+        max-width: calc(50% - 20px); /* Adjust column width for smaller screens */
+    }
+}
+
+/* Media query for extra small screens */
+@media screen and (max-width: 576px) {
+    .col-xs {
+        flex: 0 0 calc(100% - 20px); /* Adjust column width for extra small screens */
+        max-width: calc(100% - 20px); /* Adjust column width for extra small screens */
+    }
+}
+
+.new {
+    max-width: 100%;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.new3,
+.new4 {
+    padding-bottom: 300px;
+}
+
+.news {
+    max-width: 100%; /* Changed max-width to 100% */
+    background-color: black;
+    color: white;
+}
+
+.caption-custom {
+    position: absolute;
+    bottom: 20px; /* Adjust as needed */
+    left: 0;
+    right: 0;
+    color: white; /* Customize text color */
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Customize background color */
+    padding: 10px; /* Adjust padding as needed */
+    border-radius: 10px; /* Adjust border radius as needed */
+}
+.carousel-item img {
+    width: 100%; /* Make the images fill the width of their container */
+    height: 100%; /* Ensure images maintain aspect ratio */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+}
+.carousel-inner {
+    position: relative; /* Ensure captions are positioned relative to the carousel */
+}
+
+.carousel-item {
+    height: 500px; /* Set a fixed height for all carousel items */
+}
+
+
+.ran {
+    padding-bottom: 20px; /* Adjust as needed */
+}
+
+.new3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.text-content {
+    max-width: 100%;
+    padding: 0 20px; /* Adjust spacing as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.text-content img {
+    float: right;
+    max-width: 100%;
+    height: auto;
+    margin-left: 20px; /* Adjust spacing between image and text */
+}
+
+@media (max-width: 768px) {
+    .text-content {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}
+.news input {
+    height: 45px;
+    width: 50%;
+    border: 2px solid white;
+    outline: none;
+    color: white;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.fab {
+    font-size: 2.5rem;
+    cursor: pointer;
+    padding-right: 7px;
+    color: white;
+}
+
+.d-block {
+    max-width: 767px;
+    height: 767px;
+}
+
+.cnt {
+    padding: 7px;
+}
+
+.card-wrapper {
+    max-width: 100%; /* Changed max-width to 100% */
+    border: 1px solid black;
+    display: inline-flex;
+    overflow-x: auto;
+    padding: 10px;
+    column-gap: 10px;
+}
+
+.item {
+    max-width: 100%; /* Changed max-width to 100% */
+    height: 750px;
+    text-align: center;
+    background-color: #ccc;
+}
+
+.card-wrapper::-webkit-scrollbar {
+    width: 5px;
+}
+
+.card-body {
+    max-width: 380px;
+    height: 400px;
+}
+
+.carusel-inner {
+    padding: 1em;
+}
+
+.card {
+    margin: 0 .5em;
+}
+
+.img-wrapper {
+    max-width: 100%; /* Changed max-width to 100% */
+    height: auto; /* Changed height to auto */
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.images {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+body {
+    max-width: 100%;
+    align-tracks: center;
+    background-image: linear-gradient(90deg, #fee, #eef, #efe, #dee, #ede, #eed);
+}
+
+.contact {
+    width: 100%; /* Changed width to 100% */
+}
+
+.ran {
+    padding-bottom: 200px;
+}
+
+.card-image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 3px;
+}
+
+.card-image .card-images {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #4070f4;
+}
+
+.card {
+    border-radius: 25px;
+    background-color: #fff;
+    justify-content: space-around;
+}
+
+.slide-content {
+    display: flex;
+    margin: 0 20px; /* Adjusted margin for smaller screens */
+}
+
+.swiper-navBtn {
+    color: #4070f4;
+}
+
+.image-content,
+.card-content {
+    padding: 10px 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-content {
+    row-gap: 5px;
+    position: relative; /* Changed position to relative */
+    padding: 25px 0;
+}
+
+.slide-container {
+    width: 100%;
+    max-width: 1260px; /* Adjusted maximum width */
+    margin: auto;
+    padding: 20px;
+    background-color: #f2f2f2; /* Added background color for better visibility */
+}
+
+.name {
+    font-size: 20px;
+    color: #333;
+    font-weight: 500;
+}
+
+.description {
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+}
+
+.button1 {
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: #4070f4;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #4070f4;
+    left: 0;
+    top: 0;
+    border-radius: 25px 25px 0 25px;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+    .main {
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .card-wrapper {
+        overflow-x: auto;
+        flex-wrap: nowrap; /* Ensures items don't wrap on smaller screens */
+    }
+
+    .item {
+        flex: 0 0 auto; /* Ensures items don't grow on smaller screens */
+    }
+
+    .swiper-container {
+        width: 100%;
+    }
+
+    .swiper-slide {
+        width:100%;
+        background-color: #fff; /* Added background color for better visibility */
+        border-radius: 10px; /* Added border radius for a nicer appearance */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added box shadow for depth */
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+
+    .swiper-pagination {
+        bottom: 10px;
+    }
+
+    .slide-content {
+        margin: 0 10px; /* Adjusted margin for smaller screens */
+    }
+
+    .slide-container {
+        padding: 20px;
+    }
+}
